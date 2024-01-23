@@ -1,9 +1,13 @@
-<H3 class="msg">Feliz Cumple</H3>
-<h4 class="name">Carla</h4>
 
+<h3 class="msg">¡Feliz Cumple!</h3>
+<h4 class="name">Carla</h4>
+<img src="flork-torta.png" alt="flork-torta" class="img">
+<h4 class="text">Ya no eres colágeno sino ensure</h4>
+<img src="sticker-1.png" alt="sticker" class="img2">
 <canvas class="confetti" id="canvas"></canvas>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 
   .confetti {
     max-width: 100%;
@@ -11,40 +15,62 @@
     margin: 0 auto;
     user-select: none;
   }
-
   body {
     cursor: pointer;
   }
   .msg {
+    margin: 0;
     font-weight: 900;
-    /* text-transform: uppercase; */
-    padding: 30px;
     position: absolute;
     left: 0;
     right: 0;
     text-align: center;
-    top: 37%;
-    color: #c054ff;
+    top: 13%;
+    color: #ff5454;
     font-family: 'Mea Culpa', cursive;
-    font-size: 93px;
-    /* letter-spacing: 10px; */
+    font-size: 130px;
     text-shadow: 2px 4px 11px rgb(0 0 0 / 28%);
-    /* -webkit-text-stroke-width: 1px; */
-    /* -webkit-text-stroke-color: white; */
   }
   .name {
     font-weight: 900;
-    padding: 36px;
+    margin: 0;
     position: absolute;
     left: 0;
     right: 0;
     text-align: center;
-    top: 45%;
+    top: 23%;
     color: #ff43b2;
     font-family: 'Mea Culpa', cursive;
-    font-size: 93px;
+    font-size: 130px;
     text-shadow: 2px 4px 11px rgb(0 0 0 / 28%);
-}
+  }
+  .img {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 30%;
+    transform: translateX(-50%);
+  }
+  .text {
+    margin: 0;
+    position: absolute;
+    right: 50px;
+    text-align: right;
+    bottom: 20%;
+    color: #303030;
+    font-family: 'Mynerve', cursive;
+    font-size: 70px;
+    width: 70%;
+  }
+  .img2 {
+    bottom: 0%;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+  
 </style>
 <script>
   //-----------Var Inits--------------
